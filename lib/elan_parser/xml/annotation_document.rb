@@ -1,37 +1,6 @@
 module ElanParser
   module XML
 
-class MediaDescriptor
-			include HappyMapper
-
-			tag 'MEDIA_DESCRIPTOR'
-
-			attribute :media_url, String, :tag => 'MEDIA_URL'
-			attribute :relative_media_url, String, :tag => 'RELATIVE_MEDIA_URL'
-			attribute :mime_type, String, :tag => 'MIME_TYPE'
-			attribute :time_origin, String, :tag => 'TIME_ORIGIN'
-			attribute :extracted_from, String, :tag => 'EXTRACTED_FROM'
-		end
-
-		class Property
-			include HappyMapper
-
-			tag 'PROPERTY'
-			attribute :name, String, :tag => 'NAME'
-		end
-
-		class LinkedFileDescriptor
-			include HappyMapper
-
-			tag 'LINKED_FILE_DESCRIPTOR'
-
-			attribute :link_url, String, :tag => 'LINK_URL'
-			attribute :relative_link_url, String, :tag => 'RELATIVE_LINK_URL'
-			attribute :mime_type, String, :tag => 'MIME_TYPE'
-			attribute :time_origin, Integer, :tag => 'TIME_ORIGIN'
-			attribute :associated_with, String, :tag => 'ASSOCIATED_WITH'
-		end
-
 		class Header
 			include HappyMapper
 
