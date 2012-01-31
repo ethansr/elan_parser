@@ -1,5 +1,7 @@
 require "spec_helper"
 
+require 'elan_parser'
+
 describe ElanParser::XML do
 	before(:all) do
 			@eparser = ElanParser::XML::AnnotationDocument.parse(

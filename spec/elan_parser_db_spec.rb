@@ -1,4 +1,5 @@
 require "spec_helper"
+require 'elan_parser'
 require "factories/annotation_documents"
 
 describe ElanParser::DB do
